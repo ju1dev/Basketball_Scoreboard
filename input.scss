@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&family=Silkscreen&display=swap');
+
+$background-color: #222;
+$primary-color: #333;
+$secondary-color: #555;
+$primary-font: 'Rubic', sans-serif;
+
+* {
+    color: #eee;
+    font-family: $primary-font;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to right, $background-color, $secondary-color);
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    div{
+        margin-right: 3rem;
+        padding: 5px 10px;
+        background-color: $primary-color;
+    }  
+
+    .score {
+        margin: 35px auto;
+        background-color: $secondary-color;
+        width: 60px;
+        height: auto;
+        p {
+            font-family: 'Silkscreen';
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .buttons {
+        margin: auto;
+        button {
+            border: none;
+            border-radius: 5px;
+            opacity: 0.8;
+            transition: 0.3s;
+            color: $primary-color;
+            font-weight: bold;
+            font-size: 24px;
+            min-width: 50px;
+            height: 50px;
+            
+
+            &:hover {
+                opacity: 1;
+                transition: 0.3s;
+            }
+            &:active {
+                opacity: 0.6;
+                transition: 0.1s;
+            }
+        }
+        
+    }
+}
